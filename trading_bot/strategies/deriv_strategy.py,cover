@@ -1,0 +1,43 @@
+> class DerivStrategy:
+>     def __init__(self, volatility_threshold=2, trend_threshold=0.5):
+!         self.volatility_threshold = volatility_threshold
+!         self.trend_threshold = trend_threshold
+  
+>     def apply_strategy(self, market_data):
+>         """
+>         A strategy that considers price, volatility, and trend direction.
+  
+>         market_data = {
+>             "price": float,  # Current market price
+>             "volatility": float,  # Market volatility
+>             "trend": float  # Trend direction (positive = up, negative = down)
+>         }
+>         """
+!         price = market_data.get("price", 0)
+!         volatility = market_data.get("volatility", 0)
+!         trend = market_data.get("trend", 0)
+  
+!         if price > 100 and volatility < self.volatility_threshold and trend > self.trend_threshold:
+!             return "buy"
+!         elif price < 100 and volatility < self.volatility_threshold and trend < -self.trend_threshold:
+!             return "sell"
+!         return "hold"
+  
+  
+> if __name__ == "__main__":
+!     strategy = DerivStrategy()
+  
+  
+!     def calculate_trade_signal(data):
+!         if data['price'] > 100:
+!             return "BUY"
+!         elif data['price'] < 50:
+!             return "SELL"
+!         return "HOLD"
+  
+  
+      # Example market data with volatility and trend
+!     market_data = {"price": 105, "volatility": 1.5, "trend": 0.8}
+  
+!     decision = strategy.apply_strategy(market_data)
+!     print(decision)  # Expected output: "buy"

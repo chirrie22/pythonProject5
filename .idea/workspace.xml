@@ -4,17 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aab30007-5b8e-4c85-a3de-78463c5ec166" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject4 trading.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="aab30007-5b8e-4c85-a3de-78463c5ec166" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonProject4 trading.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject4 trading.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/der.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engineering.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trading_bot/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trading_bot/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trading_bot/strategies/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/strategies/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trading_bot/strategies/test_deriv_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/strategies/test_deriv_strategy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trading_bot/test_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/test_logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trading_bot/test_start_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/test_start_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trading_bot/tests/test_main_execution.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/tests/test_main_execution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_executor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_trade_executor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_trade_executor/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_trade_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_trade_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trading_bot/trade_executors/test_execute_trade.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/trade_executors/test_execute_trade.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training and evaluating.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -34,17 +61,71 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chiri&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
+    "Notification.DoNotAsk-Vcs Important Messages": "true",
+    "Python tests.Python tests in deriv_trade_executor.py.executor": "Run",
+    "Python tests.Python tests in main.py.executor": "Run",
+    "Python tests.Python tests in test_config.py.executor": "Run",
+    "Python tests.Python tests in test_deriv_strategy.py.executor": "Run",
+    "Python tests.Python tests in test_deriv_trade_executor.py.executor": "Run",
+    "Python tests.Python tests in test_execute_trade.py.executor": "Run",
+    "Python tests.Python tests in test_import.py.executor": "Run",
+    "Python tests.Python tests in test_logger.py.executor": "Run",
+    "Python tests.Python tests in test_main.py.executor": "Run",
+    "Python tests.Python tests in test_main_execution.py.executor": "Run",
+    "Python tests.Python tests in test_start_bot.py.executor": "Run",
+    "Python tests.Python tests in test_strategy.py.executor": "Run",
+    "Python tests.Python tests in test_trading_config.py.executor": "Run",
+    "Python tests.Python tests in test_websocket.py.executor": "Run",
+    "Python tests.Python tests in trading_config.py.executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.a.executor": "Run",
+    "Python.ai_model.executor": "Run",
+    "Python.backtest.executor": "Run",
+    "Python.config.executor": "Run",
+    "Python.data_fetcher.executor": "Run",
+    "Python.der.executor": "Run",
+    "Python.deriv_ai_model.executor": "Run",
+    "Python.deriv_data_fetcher.executor": "Run",
+    "Python.deriv_executor.executor": "Run",
+    "Python.deriv_strategy.executor": "Run",
+    "Python.deriv_trade_excecutor.executor": "Run",
+    "Python.deriv_trade_executor.executor": "Run",
+    "Python.engineering.executor": "Run",
+    "Python.forex_trade_excecutor.executor": "Run",
+    "Python.implement.executor": "Run",
+    "Python.logger.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.or.executor": "Run",
+    "Python.save_model.executor": "Run",
+    "Python.strategy.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.test_config.executor": "Run",
+    "Python.test_strategy.executor": "Run",
+    "Python.test_websocket.executor": "Run",
+    "Python.trade_executor.executor": "Run",
+    "Python.trading_config.executor": "Run",
+    "Python.train_dummy_model.executor": "Run",
+    "Python.try.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/chiri/PycharmProjects/pythonProject5",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chiri\PycharmProjects\pythonProject5" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chiri\PycharmProjects\pythonProject5\trading_bot\backtesting\tests" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProject4 trading" />
@@ -85,11 +166,49 @@
       <option name="presentableId" value="Default" />
       <updated>1736575423263</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1737654611921</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737654611922</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1737654631824</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737654631825</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="DERIV_API_TOKEN" value="zOHx5Nu50zDoYOz " />
+    </envs>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="101b28a1-7e04-4b0e-a28d-4798d0c9edfd" value="TOOL_WINDOW" />
+        <entry key="8d5cde74-d55a-4031-a11e-0478c1d339ec" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="101b28a1-7e04-4b0e-a28d-4798d0c9edfd">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="8d5cde74-d55a-4031-a11e-0478c1d339ec">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -109,5 +228,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

@@ -1,0 +1,39 @@
+import unittest
+from unittest.mock import patch, MagicMock
+import trading_bot.main
+
+
+class TestMain(unittest.TestCase):
+
+    @patch("trading_bot.main.logger", autospec=True)
+    @patch("trading_bot.main.DerivExecutor", autospec=True)
+    def test_start_bot_execution(self, mock_executor, mock_logger):
+        """Test start_bot() execution and logs."""
+
+        # Mock DerivExecutor instance
+        instance = mock_executor.return_value
+        instance.execute_trade.return_value = "Trade executed: BUY 100 on EURUSD"
+
+        # Run the function
+        result = trading_bot.main.start_bot()
+
+        # Check the returned value
+        self.assertEqual(result, "Bot started")
+
+        # Verify logger messages
+        expected_logs = [
+            "Trading bot started successfully!",
+            "Attempting trade: BUY 100 on EURUSD",
+            "Trade executed: BUY 100 on EURUSD"
+        ]
+        logged_messages = [call.args[0] for call in mock_logger.info.call_args_list]
+
+        for expected in expected_logs:
+            self.assertIn(expected, logged_messages)
+
+        # Verify that execute_trade was called
+        instance.execute_trade.assert_called_once_with("buy", 100, "EURUSD")
+
+
+if __name__ == "__main__":
+    unittest.main()

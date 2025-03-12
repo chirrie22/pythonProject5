@@ -1,0 +1,18 @@
+Name                                                       Stmts   Miss  Cover   Missing
+----------------------------------------------------------------------------------------
+trading_bot\__init__.py                                        3      0   100%
+trading_bot\config.py                                          1      0   100%
+trading_bot\logger.py                                         11      0   100%
+trading_bot\main.py                                            3      0   100%
+trading_bot\test_import.py                                     8      1    88%   10
+trading_bot\test_main.py                                      10      1    90%   13
+trading_bot\test_start_bot.py                                 10      1    90%   13
+trading_bot\test_trading_config.py                            10      1    90%   13
+trading_bot\trade_executors\__init__.py                        4      2    50%   2, 6
+trading_bot\trade_executors\deriv_trade_executor.py            8      0   100%
+trading_bot\trade_executors\test_deriv_trade_executor.py      33     17    48%   4, 9-11, 13, 16-17, 20, 25, 28-33, 35-36, 40
+trading_bot\trade_executors\test_execute_trade.py             21      2    90%   32, 36
+trading_bot\trade_executors\test_websocket.py                 13      1    92%   20
+trading_bot\trading_config.py                                 15      6    60%   10-11, 22, 26-30
+----------------------------------------------------------------------------------------
+TOTAL                                                        150     32    79%

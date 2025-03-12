@@ -1,0 +1,13 @@
+> import pytest
+> from trading_bot.strategies.deriv_strategy import DerivStrategy
+  
+> @pytest.mark.parametrize("market_data, expected", [
+>     ({"price": 105, "volatility": 1.5, "trend": 0.8}, "buy"),
+>     ({"price": 95, "volatility": 1.5, "trend": -0.8}, "sell"),
+>     ({"price": 100, "volatility": 3.0, "trend": 0.5}, "hold"),  # High volatility
+>     ({"price": 101, "volatility": 2.5, "trend": 0.4}, "hold"),  # Unclear trend
+>     ({"price": 99, "volatility": 1.2, "trend": 0.2}, "hold"),   # Weak downtrend
+> ])
+> def test_apply_strategy(market_data, expected):
+!     strategy = DerivStrategy()
+!     assert strategy.apply_strategy(market_data) == expected
