@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aab30007-5b8e-4c85-a3de-78463c5ec166" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject4 trading.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject4 trading.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/der.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/engineering.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/strategies/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/strategies/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/strategies/test_deriv_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/strategies/test_deriv_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/test_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/test_logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/test_start_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/test_start_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/tests/test_main_execution.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/tests/test_main_execution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_executor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_trade_executor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_trade_executor/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_trade_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_trade_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/trade_executors/test_execute_trade.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/trade_executors/test_execute_trade.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training and evaluating.py" beforeDir="false" />
-    </list>
+    <list default="true" id="aab30007-5b8e-4c85-a3de-78463c5ec166" name="Changes" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +90,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/chiri/PycharmProjects/pythonProject5",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
