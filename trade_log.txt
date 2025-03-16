@@ -106,3 +106,6 @@
 2025-03-16 20:43:27,337 - INFO - Trading bot started successfully!
 2025-03-16 20:43:27,340 - INFO - Attempting trade: BUY 100 on EURUSD
 2025-03-16 20:43:27,341 - INFO - Trade executed: BUY 100 on EURUSD
+2025-03-16 20:49:33,932 - INFO - Trading bot started successfully!
+2025-03-16 20:49:33,934 - INFO - Attempting trade: BUY 100 on EURUSD
+2025-03-16 20:49:33,934 - INFO - Trade executed: BUY 100 on EURUSD

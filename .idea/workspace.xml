@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aab30007-5b8e-4c85-a3de-78463c5ec166" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/trade_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/trade_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/trade_log.txt" afterDir="false" />
-    </list>
+    <list default="true" id="aab30007-5b8e-4c85-a3de-78463c5ec166" name="Changes" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
