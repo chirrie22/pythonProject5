@@ -1,0 +1,12 @@
+2025-03-15 20:41:50,926 - INFO - Trading bot started successfully!
+2025-03-15 20:41:50,927 - INFO - Attempting trade: BUY 100 on EURUSD
+2025-03-15 20:41:50,927 - INFO - Trade executed: BUY 100 on EURUSD
+2025-03-15 20:42:40,608 - INFO - Trading bot started successfully!
+2025-03-15 20:42:40,608 - INFO - Attempting trade: BUY 100 on EURUSD
+2025-03-15 20:42:40,608 - INFO - Trade executed: BUY 100 on EURUSD
+2025-03-15 20:46:24,929 - INFO - Trading bot started successfully!
+2025-03-15 20:46:24,930 - INFO - Attempting trade: BUY 100 on EURUSD
+2025-03-15 20:46:24,930 - INFO - Trade executed: BUY 100 on EURUSD
+2025-03-15 20:46:25,183 - INFO - Trading bot started successfully!
+2025-03-15 20:46:25,183 - INFO - Attempting trade: BUY 100 on EURUSD
+2025-03-15 20:46:25,183 - INFO - Trade executed: BUY 100 on EURUSD

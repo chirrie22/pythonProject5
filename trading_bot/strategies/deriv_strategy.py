@@ -15,6 +15,17 @@ class DerivStrategy:
             return "sell"
         return "hold"
 
+    def analyze_trend(self, tick_data):  # ✅ Added self
+        """
+        Analyzes market trends based on tick data.
+        Returns a trade signal if conditions are met.
+        """
+        if tick_data["quote"] > 100:  # Example condition
+            return {"action": "buy", "amount": 1}
+        elif tick_data["quote"] < 50:
+            return {"action": "sell", "amount": 1}
+        return None
+
     def calculate_signal(self, market_data):
         """Alternative signal calculation based on price and trend."""
         price = market_data['price']

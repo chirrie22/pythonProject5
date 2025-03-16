@@ -1,5 +1,5 @@
 import logging
-from trading_bot.trade_executors import DerivExecutor
+from trading_bot.trade_executors.deriv_executor import DerivExecutor
 
 
 def initialize_logger():
