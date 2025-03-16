@@ -1,5 +1,10 @@
+import sys
+import os
 import logging
 from trading_bot.trade_executors.deriv_executor import DerivExecutor
+
+# 🔧 Fix Import Error by Adding Project Root to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 
 def initialize_logger():

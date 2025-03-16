@@ -5,46 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aab30007-5b8e-4c85-a3de-78463c5ec166" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/trading_bot/backtester/backtest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/backtester/performance_metrics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/backtester/plot_result_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/backtester/trade_simulator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/data_fetchers/cryto_data_fetcher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/data_fetchers/data_verification.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/data_fetchers/deriv_v75_data_fetcher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/data_fetchers/forex_data_fetcher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/feature_engineering.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/strategies/deriv_ai_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/strategies/scalping_vix75_strategy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/trade_executors/data_fetcher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_ws_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/trade_executors/model_predictor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/trade_executors/model_trainer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/trade_executors/run_backtest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/trade_executors/strategy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_bot/trade_executors/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/Activate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/Activate.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/activate" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/activate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/activate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/activate.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/python.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/python.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/pythonw.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/pythonw.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/pyvenv.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trade_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/trade_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/backtesting/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/backtester/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/backtesting/tests/test_ai_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/backtester/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/backtesting/tests/test_strategy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/data fetcher/cryto_data_fetcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/backtester/data_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/data fetcher/deriv_data_fetcher.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/data fetcher/forex_data_fetcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/backtester/generate_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/data fetcher/trading_bot.log" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/data_fetchers/trading_bot.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trading_bot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/strategies/deriv_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/strategies/deriv_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/trade_executors/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/trade_executors/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_trade_executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_trade_executor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_trade_executor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/trade_executors/deriv_trade_executor/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trading_bot/trade_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/trading_bot/trade_log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,80 +58,80 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
-    "Notification.DoNotAsk-Vcs Important Messages": "true",
-    "Python tests.Python tests in deriv_trade_executor.py.executor": "Run",
-    "Python tests.Python tests in main.py.executor": "Run",
-    "Python tests.Python tests in test_config.py.executor": "Run",
-    "Python tests.Python tests in test_deriv_strategy.py.executor": "Run",
-    "Python tests.Python tests in test_deriv_trade_executor.py.executor": "Run",
-    "Python tests.Python tests in test_execute_trade.py.executor": "Run",
-    "Python tests.Python tests in test_import.py.executor": "Run",
-    "Python tests.Python tests in test_logger.py.executor": "Run",
-    "Python tests.Python tests in test_main.py.executor": "Run",
-    "Python tests.Python tests in test_main_execution.py.executor": "Run",
-    "Python tests.Python tests in test_start_bot.py.executor": "Run",
-    "Python tests.Python tests in test_strategy.py.executor": "Run",
-    "Python tests.Python tests in test_trading_config.py.executor": "Run",
-    "Python tests.Python tests in test_websocket.py.executor": "Run",
-    "Python tests.Python tests in trading_config.py.executor": "Run",
-    "Python.__init__.executor": "Run",
-    "Python.a.executor": "Run",
-    "Python.ai_model.executor": "Run",
-    "Python.backtest.executor": "Run",
-    "Python.config.executor": "Run",
-    "Python.data_fetcher.executor": "Run",
-    "Python.data_verification.executor": "Run",
-    "Python.der.executor": "Run",
-    "Python.deriv_ai_model.executor": "Run",
-    "Python.deriv_data_fetcher.executor": "Run",
-    "Python.deriv_executor.executor": "Run",
-    "Python.deriv_strategy.executor": "Run",
-    "Python.deriv_trade_excecutor.executor": "Run",
-    "Python.deriv_trade_executor.executor": "Run",
-    "Python.deriv_v75_data_fetcher.executor": "Run",
-    "Python.deriv_ws_client.executor": "Run",
-    "Python.engineering.executor": "Run",
-    "Python.feature_engineering.executor": "Run",
-    "Python.forex_trade_excecutor.executor": "Run",
-    "Python.implement.executor": "Run",
-    "Python.logger.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.model_predictor.executor": "Run",
-    "Python.or.executor": "Run",
-    "Python.run_backtest.executor": "Run",
-    "Python.save_model.executor": "Run",
-    "Python.scalping_vix75_strategy.executor": "Run",
-    "Python.strategy.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.test_config.executor": "Run",
-    "Python.test_strategy.executor": "Run",
-    "Python.test_websocket.executor": "Run",
-    "Python.trade_executor.executor": "Run",
-    "Python.trading_config.executor": "Run",
-    "Python.train_dummy_model.executor": "Run",
-    "Python.try.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/chiri/PycharmProjects/pythonProject5",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
+    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in deriv_trade_executor.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in main.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_config.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_deriv_strategy.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_deriv_trade_executor.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_execute_trade.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_import.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_logger.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_main.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_main_execution.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_start_bot.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_strategy.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_trading_config.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_websocket.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in trading_config.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.a.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ai_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backtest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_fetcher.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_verification.executor&quot;: &quot;Run&quot;,
+    &quot;Python.der.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_ai_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_data_fetcher.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_executor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_strategy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_trade_excecutor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_trade_executor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_v75_data_fetcher.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_ws_client.executor&quot;: &quot;Run&quot;,
+    &quot;Python.engineering.executor&quot;: &quot;Run&quot;,
+    &quot;Python.feature_engineering.executor&quot;: &quot;Run&quot;,
+    &quot;Python.forex_trade_excecutor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.implement.executor&quot;: &quot;Run&quot;,
+    &quot;Python.logger.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_predictor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.or.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run_backtest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.save_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scalping_vix75_strategy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.strategy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_strategy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_websocket.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trade_executor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trading_config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train_dummy_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.try.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chiri/PycharmProjects/pythonProject5&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chiri\PycharmProjects\pythonProject5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chiri\PycharmProjects\pythonProject5\trading_bot" />
       <recent name="C:\Users\chiri\PycharmProjects\pythonProject5\trading_bot\" />
       <recent name="C:\Users\chiri\PycharmProjects\pythonProject5\trading_bot\trade_executors" />
       <recent name="C:\Users\chiri\PycharmProjects\pythonProject5\trading_bot\data_fetcher" />
       <recent name="C:\Users\chiri\PycharmProjects\pythonProject5\trading_bot\backtester" />
-      <recent name="C:\Users\chiri\PycharmProjects\pythonProject5\trading_bot\backtesting\tests" />
     </key>
   </component>
   <component name="RunManager">
