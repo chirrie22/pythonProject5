@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aab30007-5b8e-4c85-a3de-78463c5ec166" name="Changes" comment="Initial commit" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../pythonProject4" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chirrie22&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/chirrie22/pythonProject5.git&quot;,
+    &quot;accountId&quot;: &quot;e447842f-4f6e-4339-8501-289c8f490bb5&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2rTFzvMB5qEu36ygcXOlxVkoIgp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
+    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in deriv_trade_executor.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in main.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_config.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_deriv_strategy.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_deriv_trade_executor.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_execute_trade.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_import.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_logger.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_main.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_main_execution.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_start_bot.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_strategy.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_trading_config.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_websocket.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in trading_config.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.a.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ai_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backtest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_fetcher.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_verification.executor&quot;: &quot;Run&quot;,
+    &quot;Python.der.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_ai_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_data_fetcher.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_executor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_strategy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_trade_excecutor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_trade_executor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_v75_data_fetcher.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deriv_ws_client.executor&quot;: &quot;Run&quot;,
+    &quot;Python.engineering.executor&quot;: &quot;Run&quot;,
+    &quot;Python.feature_engineering.executor&quot;: &quot;Run&quot;,
+    &quot;Python.forex_trade_excecutor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.implement.executor&quot;: &quot;Run&quot;,
+    &quot;Python.logger.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_predictor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.or.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run_backtest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.save_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scalping_vix75_strategy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.strategy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_strategy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_websocket.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trade_executor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trading_config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train_dummy_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.try.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chiri/PycharmProjects/pythonProject5&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chiri\PycharmProjects\pythonProject5" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chiri\PycharmProjects\pythonProject5\trading_bot" />
+      <recent name="C:\Users\chiri\PycharmProjects\pythonProject5\trading_bot\" />
+      <recent name="C:\Users\chiri\PycharmProjects\pythonProject5\trading_bot\trade_executors" />
+      <recent name="C:\Users\chiri\PycharmProjects\pythonProject5\trading_bot\data_fetcher" />
+      <recent name="C:\Users\chiri\PycharmProjects\pythonProject5\trading_bot\backtester" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="pythonProject4 trading" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aab30007-5b8e-4c85-a3de-78463c5ec166" name="Changes" comment="" />
+      <created>1736575423263</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736575423263</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1737654611921</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737654611922</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1737654631824</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737654631825</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="DERIV_API_TOKEN" value="zOHx5Nu50zDoYOz " />
+    </envs>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="101b28a1-7e04-4b0e-a28d-4798d0c9edfd" value="TOOL_WINDOW" />
+        <entry key="8d5cde74-d55a-4031-a11e-0478c1d339ec" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="101b28a1-7e04-4b0e-a28d-4798d0c9edfd">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="8d5cde74-d55a-4031-a11e-0478c1d339ec">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+</project>
