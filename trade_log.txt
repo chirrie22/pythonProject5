@@ -109,3 +109,16 @@
 2025-03-16 20:49:33,932 - INFO - Trading bot started successfully!
 2025-03-16 20:49:33,934 - INFO - Attempting trade: BUY 100 on EURUSD
 2025-03-16 20:49:33,934 - INFO - Trade executed: BUY 100 on EURUSD
+2025-03-17 11:44:08,630 - INFO - Trading bot started successfully!
+2025-03-17 11:44:08,632 - INFO - Attempting trade: BUY 100 on EURUSD
+2025-03-17 11:44:08,632 - INFO - Trade executed: BUY 100 on EURUSD
+2025-03-19 20:14:53,193 - INFO - Trading bot started successfully!
+2025-03-19 20:14:53,197 - INFO - Using API token: zOHx5... (hidden for security)
+2025-03-19 20:14:53,205 - INFO - Attempting trade: BUY 1.0 on R_75
+2025-03-19 20:14:56,563 - INFO - Trade executed successfully: {'buy': {'balance_after': 60284.85, 'buy_price': 1, 'contract_id': 275971634248, 'longcode': 'Win payout if Volatility 75 Index is strictly higher than entry spot at 1 minute after contract start time.', 'payout': 1.95, 'purchase_time': 1742404496, 'shortcode': 'CALL_R_75_1.95_1742404496_1742404556_S0P_0', 'start_time': 1742404496, 'transaction_id': 550135786208}, 'echo_req': {'buy': '77cc9fa4-dd0f-df77-3418-269963d2e55d', 'price': 1}, 'msg_type': 'buy'}
+2025-03-19 20:14:56,568 - INFO - Bot started
+2025-03-19 20:17:43,084 - INFO - Trading bot started successfully!
+2025-03-19 20:17:43,086 - INFO - Using API token: zOHx5... (hidden for security)
+2025-03-19 20:17:43,088 - INFO - Attempting trade: BUY 1.0 on R_75
+2025-03-19 20:17:46,132 - INFO - Trade executed successfully: {'buy': {'balance_after': 60283.85, 'buy_price': 1, 'contract_id': 275971886308, 'longcode': 'Win payout if Volatility 75 Index is strictly higher than entry spot at 1 minute after contract start time.', 'payout': 1.95, 'purchase_time': 1742404665, 'shortcode': 'CALL_R_75_1.95_1742404665_1742404725_S0P_0', 'start_time': 1742404665, 'transaction_id': 550136287528}, 'echo_req': {'buy': 'bc115de5-3548-e06c-676a-3ab4699314d4', 'price': 1}, 'msg_type': 'buy'}
+2025-03-19 20:17:46,203 - INFO - Bot started

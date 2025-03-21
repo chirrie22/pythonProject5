@@ -1,6 +1,8 @@
-import talib
-import requests
+import pandas as pd
+import pandas_ta as ta
 from datetime import datetime
+from numpy import nan as npNaN  # Ensure compatibility with NumPy
+
 
 class ScalpingVIX75Strategy:
     def __init__(self, data_fetcher, trade_executor):
@@ -8,32 +10,69 @@ class ScalpingVIX75Strategy:
         self.trade_executor = trade_executor
 
     def calculate_indicators(self, data):
-        close_prices = [d['close'] for d in data]
-        # Calculate EMAs
-        ema9 = talib.EMA(close_prices, timeperiod=9)
-        ema21 = talib.EMA(close_prices, timeperiod=21)
-        # Calculate RSI
-        rsi = talib.RSI(close_prices, timeperiod=14)
-        # Calculate Bollinger Bands
-        upper, middle, lower = talib.BBANDS(close_prices, timeperiod=20)
-        return ema9, ema21, rsi, upper, lower
+        """Calculate EMA, RSI, and Bollinger Bands indicators."""
+        df = pd.DataFrame(data)
 
-    def check_buy_signal(self, ema9, ema21, rsi, lower_band, close_prices=None):
-        if ema9[-1] > ema21[-1] and rsi[-1] < 70 and close_prices[-1] > lower_band[-1]:
+        # Ensure data has the required 'close' column
+        if df.empty or 'close' not in df.columns:
+            print("❌ Error: Market data missing or invalid.")
+            return None
+
+        df['ema9'] = ta.ema(df['close'], length=9)
+        df['ema21'] = ta.ema(df['close'], length=21)
+        df['rsi'] = ta.rsi(df['close'], length=14)
+
+        # Bollinger Bands
+        bb = ta.bbands(df['close'], length=20)
+        if bb is not None and 'BBU_20_2.0' in bb.columns and 'BBL_20_2.0' in bb.columns:
+            df['upper_band'] = bb['BBU_20_2.0']
+            df['lower_band'] = bb['BBL_20_2.0']
+        else:
+            df['upper_band'] = npNaN
+            df['lower_band'] = npNaN
+
+        return df
+
+    def check_buy_signal(self, df):
+        """Check if buy conditions are met."""
+        if len(df) < 1:
+            return False  # Prevent index error
+
+        last_row = df.iloc[-1]
+        if last_row['ema9'] > last_row['ema21'] and last_row['rsi'] < 70 and last_row['close'] > last_row['lower_band']:
+            print(f"[{datetime.now()}] ✅ BUY Signal detected at price {last_row['close']}")
             return True
         return False
 
-    def check_sell_signal(self, ema9, ema21, rsi, upper_band):
-        if ema9[-1] < ema21[-1] and rsi[-1] > 30 and close_prices[-1] < upper_band[-1]:
+    def check_sell_signal(self, df):
+        """Check if sell conditions are met."""
+        if len(df) < 1:
+            return False  # Prevent index error
+
+        last_row = df.iloc[-1]
+        if last_row['ema9'] < last_row['ema21'] and last_row['rsi'] > 30 and last_row['close'] < last_row['upper_band']:
+            print(f"[{datetime.now()}] ❌ SELL Signal detected at price {last_row['close']}")
             return True
         return False
 
     def execute_strategy(self):
+        """Fetch market data and execute trades based on signals."""
         data = self.data_fetcher.fetch_data()
-        ema9, ema21, rsi, upper_band, lower_band = self.calculate_indicators(data)
+        df = self.calculate_indicators(data)
 
-        if self.check_buy_signal(ema9, ema21, rsi, lower_band):
-            self.trade_executor.place_trade('buy', 10)  # Example amount
-        elif self.check_sell_signal(ema9, ema21, rsi, upper_band):
-            self.trade_executor.place_trade('sell', 10)  # Example amount
+        if df is None or df.empty:
+            print("⚠️ Skipping trade execution due to invalid or insufficient data.")
+            return
 
+        trade_size = 1000  # Default lot size
+        stop_loss = 50  # Risk management
+        take_profit = 100
+
+        if self.check_buy_signal(df):
+            print(f"[{datetime.now()}] 📈 Executing BUY trade at {df['close'].iloc[-1]}")
+            self.trade_executor.place_trade('buy', trade_size, stop_loss=stop_loss, take_profit=take_profit)
+        elif self.check_sell_signal(df):
+            print(f"[{datetime.now()}] 📉 Executing SELL trade at {df['close'].iloc[-1]}")
+            self.trade_executor.place_trade('sell', trade_size, stop_loss=stop_loss, take_profit=take_profit)
+        else:
+            print(f"[{datetime.now()}] ⚠️ No valid trade signal found.")

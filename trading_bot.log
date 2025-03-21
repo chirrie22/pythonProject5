@@ -1,0 +1,8 @@
+2025-03-21 19:03:26,178 - INFO - logger.py - Logger initialized successfully!
+2025-03-21 19:03:26,179 - DEBUG - logger.py - This is a debug message for troubleshooting.
+2025-03-21 19:04:18,518 - INFO - logger.py - Logger initialized successfully!
+2025-03-21 19:04:18,519 - DEBUG - logger.py - This is a debug message for troubleshooting.
+2025-03-21 19:06:08,226 - INFO - logger.py - Logger initialized successfully!
+2025-03-21 19:06:08,226 - DEBUG - logger.py - This is a debug message for troubleshooting.
+2025-03-21 19:06:31,563 - INFO - logger.py - Logger initialized successfully!
+2025-03-21 19:06:31,563 - DEBUG - logger.py - This is a debug message for troubleshooting.

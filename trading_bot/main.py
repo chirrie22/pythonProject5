@@ -1,13 +1,19 @@
 import sys
 import os
 import logging
+from dotenv import load_dotenv
+from trading_bot.trade_executors.deriv_executor import DerivExecutor
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Retrieve API token and trading details from environment variables
+API_TOKEN = os.getenv("API_TOKEN")
+SYMBOL = os.getenv("SYMBOL", "R_75")  # Default to "R_75" if not set
+BUY_AMOUNT = float(os.getenv("BUY_AMOUNT", 1))  # Default to 1 if not set
 
 # Ensure the root project directory is in sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-# Import necessary modules
-from trading_bot.trade_executors.deriv_executor import DerivExecutor
-from trading_bot.config import API_TOKEN, BASE_URL, MARKET_TYPE, SYMBOL, BUY_AMOUNT
 
 
 def initialize_logger():
@@ -15,9 +21,8 @@ def initialize_logger():
     logger = logging.getLogger("trading_bot")
     logger.setLevel(logging.INFO)
 
-    # Prevent duplicate handlers if this function is called multiple times
     if not logger.handlers:
-        file_handler = logging.FileHandler("trade_log.txt")
+        file_handler = logging.FileHandler("trade_log.txt", mode='a')
         console_handler = logging.StreamHandler()
 
         formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
@@ -30,34 +35,68 @@ def initialize_logger():
     return logger
 
 
-# Initialize the logger at module level
+# Initialize the logger
 logger = initialize_logger()
 
 
-def start_bot():
-    """Start the trading bot and execute a sample trade."""
-    logger.info("Trading bot started successfully!")
-
-    # Ensure API Token is set
+def check_api_token():
+    """Check if the API token is set."""
     if not API_TOKEN:
-        logger.error("❌ API_TOKEN is missing in config.py. Set it before running the bot.")
-        return "Bot stopped due to missing API_TOKEN"
+        logger.error("❌ API_TOKEN is missing in the .env file. Set it before running the bot.")
+        raise ValueError("API_TOKEN is missing")
 
-    # Create an instance of DerivExecutor
-    executor = DerivExecutor(api_token=API_TOKEN, base_url=BASE_URL)
 
-    # Sample trade execution (modify as needed)
-    trade_type = "buy"
+def execute_trade(executor, trade_type, amount, symbol):
+    """Execute a trade and log the response."""
+    logger.info(f"🚀 Attempting trade: {trade_type.upper()} {amount} on {symbol}")
+
+    if not hasattr(executor, 'execute_trade'):
+        logger.error("❌ ERROR: DerivExecutor has no method execute_trade()")
+        return None
+
+    try:
+        result = executor.execute_trade(trade_type, amount, symbol)
+        if result:
+            logger.info(f"✅ Trade executed successfully: {result}")
+            return result
+        else:
+            logger.error("❌ Trade execution failed.")
+            return None
+    except Exception as e:
+        logger.error(f"❌ Exception during trade execution: {e}")
+        return None
+
+
+def start_bot():
+    """Start the trading bot."""
+    logger.info("⚡ Trading bot started!")
+
+    # Debugging API variables
+    logger.info(f"🔍 DEBUG: Loaded API_TOKEN={API_TOKEN[:5]}... (hidden for security)")
+    logger.info(f"🔍 DEBUG: Loaded SYMBOL={SYMBOL}")
+    logger.info(f"🔍 DEBUG: Loaded BUY_AMOUNT={BUY_AMOUNT}")
+
+    try:
+        check_api_token()
+    except ValueError as e:
+        return str(e)
+
+    # Initialize executor
+    executor = DerivExecutor(api_token=API_TOKEN)
+
+    # Define trade details
+    trade_type = "buy"  # Change as needed ("buy" or "sell")
     amount = BUY_AMOUNT
     symbol = SYMBOL
 
-    logger.info(f"Attempting trade: {trade_type.upper()} {amount} on {symbol}")
+    # Execute trade
+    result = execute_trade(executor, trade_type, amount, symbol)
 
-    result = executor.execute_trade(trade_type, amount, symbol)
-    logger.info(result)  # Log trade result
-
-    return "Bot started"
+    return "Bot started ✅" if result else "Bot stopped due to trade failure ❌"
 
 
 if __name__ == '__main__':
-    start_bot()
+    result = start_bot()
+    logger.info(result)
+
+

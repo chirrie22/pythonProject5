@@ -19,3 +19,69 @@
 2025-03-16 20:40:13,654 - INFO - Trading bot started successfully!
 2025-03-16 20:40:13,655 - INFO - Attempting trade: BUY 100 on EURUSD
 2025-03-16 20:40:13,655 - INFO - Trade executed: BUY 100 on EURUSD
+2025-03-19 13:05:18,154 - INFO - Trading bot started successfully!
+2025-03-19 13:05:18,154 - INFO - Attempting trade: BUY 1 on R_75
+2025-03-19 13:05:18,155 - INFO - {'error': 'Authentication failed.'}
+2025-03-19 15:21:37,808 - INFO - Attempting trade (Attempt 1)
+2025-03-19 15:23:53,690 - INFO - Bot started
+2025-03-19 15:25:17,496 - INFO - Trading bot started successfully!
+2025-03-19 15:25:17,499 - INFO - Attempting trade: BUY 1 on R_75
+2025-03-19 15:25:20,482 - INFO - Trade executed successfully: {'error': 'Authentication failed.'}
+2025-03-19 15:25:20,482 - INFO - Bot started
+2025-03-19 15:27:45,835 - INFO - Bot started
+2025-03-19 15:30:21,473 - INFO - Bot started
+2025-03-19 15:31:49,418 - INFO - Trading bot started successfully!
+2025-03-19 15:31:49,457 - INFO - Using API token: your_api_token_here
+2025-03-19 15:31:49,457 - INFO - Attempting trade: BUY 1 on R_75
+2025-03-19 15:31:54,144 - INFO - Trade executed successfully: {'error': 'Authentication failed.'}
+2025-03-19 15:31:54,145 - INFO - Bot started
+2025-03-19 15:34:55,778 - INFO - Trading bot started successfully!
+2025-03-19 15:34:55,779 - INFO - Using API token: your_api_token_here
+2025-03-19 15:34:55,779 - INFO - Attempting trade: BUY 1 on R_75
+2025-03-19 15:34:58,869 - INFO - Trade executed successfully: {'error': 'Authentication failed.'}
+2025-03-19 15:34:58,870 - INFO - Bot started
+2025-03-19 15:38:29,888 - INFO - Trading bot started successfully!
+2025-03-19 15:38:29,889 - INFO - Using API token: your_api_token_here
+2025-03-19 15:38:29,890 - INFO - Attempting trade: BUY 1 on R_75
+2025-03-19 15:38:31,961 - INFO - Trade executed successfully: {'error': 'Authentication failed.'}
+2025-03-19 15:38:31,961 - INFO - Bot started
+2025-03-19 16:45:38,189 - INFO - Trading bot started successfully!
+2025-03-19 16:45:38,190 - INFO - Using API token: zOHx5... (hidden for security)
+2025-03-19 16:45:38,191 - INFO - Attempting trade: BUY 1.0 on R_75
+2025-03-19 16:45:40,475 - INFO - Trade executed successfully: {'echo_req': {'buy': 1, 'contract_type': 'CALL', 'duration': 1, 'duration_unit': 'm', 'price': 1, 'symbol': 'R_75'}, 'error': {'code': 'InputValidationFailed', 'details': {}, 'message': 'Input validation failed: Properties not allowed: contract_type, duration, duration_unit, symbol.'}, 'msg_type': 'buy'}
+2025-03-19 16:45:40,475 - INFO - Bot started
+2025-03-21 16:09:23,378 - INFO - Trading bot started successfully!
+2025-03-21 16:09:23,378 - INFO - Using API token: zOHx5... (hidden for security)
+2025-03-21 16:09:23,378 - INFO - Attempting trade: BUY 1.0 on R_75
+2025-03-21 16:10:27,852 - INFO - Trade executed successfully: {'profit_loss': 632.54}
+2025-03-21 16:10:27,852 - INFO - Bot started
+2025-03-21 16:10:57,156 - INFO - Trading bot started successfully!
+2025-03-21 16:10:57,157 - INFO - Using API token: zOHx5... (hidden for security)
+2025-03-21 16:10:57,157 - INFO - Attempting trade: BUY 1.0 on R_75
+2025-03-21 16:12:03,684 - INFO - Trade executed successfully: {'profit_loss': -41.21}
+2025-03-21 16:12:03,684 - INFO - Bot started
+2025-03-21 16:14:55,704 - INFO - Trading bot started successfully!
+2025-03-21 16:14:55,705 - INFO - Using API token: zOHx5... (hidden for security)
+2025-03-21 16:14:55,705 - INFO - Attempting trade: BUY 1.0 on R_75
+2025-03-21 16:16:01,104 - INFO - Trade executed successfully: {'profit_loss': 850.31}
+2025-03-21 16:16:01,104 - INFO - Bot started
+2025-03-21 16:16:39,979 - INFO - Trading bot started successfully!
+2025-03-21 16:16:39,980 - INFO - Using API token: zOHx5... (hidden for security)
+2025-03-21 16:16:39,981 - INFO - Attempting trade: BUY 1.0 on R_75
+2025-03-21 16:17:43,931 - INFO - Trade executed successfully: {'profit_loss': -989.49}
+2025-03-21 16:17:43,931 - INFO - Bot started
+2025-03-21 16:18:02,781 - INFO - Trading bot started successfully!
+2025-03-21 16:18:02,782 - INFO - Using API token: zOHx5... (hidden for security)
+2025-03-21 16:18:02,782 - INFO - Attempting trade: BUY 1.0 on R_75
+2025-03-21 16:19:06,777 - INFO - Trade executed successfully: {'profit_loss': 581.23}
+2025-03-21 16:19:06,777 - INFO - Bot started
+2025-03-21 16:19:34,899 - INFO - Trading bot started successfully!
+2025-03-21 16:19:34,899 - INFO - Using API token: zOHx5... (hidden for security)
+2025-03-21 16:19:34,899 - INFO - Attempting trade: BUY 1.0 on R_75
+2025-03-21 16:20:39,119 - INFO - Trade executed successfully: {'profit_loss': 772.01}
+2025-03-21 16:20:39,120 - INFO - Bot started
+2025-03-21 16:22:16,864 - INFO - Trading bot started successfully!
+2025-03-21 16:22:16,875 - INFO - Using API token: zOHx5... (hidden for security)
+2025-03-21 16:22:16,875 - INFO - Attempting trade: BUY 1.0 on R_75
+2025-03-21 16:23:21,263 - INFO - Trade executed successfully: {'profit_loss': -894.85}
+2025-03-21 16:23:21,263 - INFO - Bot started

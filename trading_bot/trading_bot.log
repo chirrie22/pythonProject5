@@ -1,0 +1,14 @@
+2025-03-17 21:06:13,239 - INFO - Trading bot started successfully!
+2025-03-17 21:06:13,342 - INFO - Trade executed: BUY 100 on EURUSD
+2025-03-17 21:06:13,343 - INFO - Trade executed: BUY 100 on EURUSD
+2025-03-17 21:06:17,726 - INFO - NumExpr defaulting to 4 threads.
+2025-03-17 21:06:19,558 - INFO - AI Prediction: [0]
+2025-03-17 21:32:12,061 - INFO - Trading bot started successfully!
+2025-03-17 21:32:12,062 - INFO - Trade executed: BUY 100 on EURUSD
+2025-03-17 21:32:12,062 - INFO - Trade executed: Trade executed: BUY 100 on EURUSD
+2025-03-17 21:32:16,777 - INFO - NumExpr defaulting to 4 threads.
+2025-03-17 21:32:18,621 - INFO - AI Prediction: [0]
+2025-03-17 21:32:18,623 - INFO - Trade logged to CSV successfully.
+2025-03-17 21:32:19,681 - ERROR - Telegram alert failed: {'ok': False, 'error_code': 400, 'description': 'Bad Request: chat not found'}
+2025-03-21 19:28:56,042 - INFO - logger.py - Logger initialized successfully!
+2025-03-21 19:28:56,048 - DEBUG - logger.py - This is a debug message for troubleshooting.
