@@ -1,19 +1,26 @@
 # trading_bot/config.py
 
-# API configuration
+# 🔗 API Configuration
 DERIV_API_URL = "wss://ws.binaryws.com/websockets/v3?app_id=67310"  # WebSocket URL
-API_TOKEN = "zOHx5Nu50zDoY0z"  # Replace with your real API token
-BASE_URL = "https://api.deriv.com"  # Base URL for API requests
+API_TOKEN = "your_api_token_here"  # 🔑 Replace with your real API token
+BASE_URL = "https://api.deriv.com"  # REST API Base URL
 
-# Market and Symbol settings
-MARKET_TYPE = "deriv"  # Set your market type here (e.g., deriv, forex, crypto)
-SYMBOL = "R_75"  # Market Symbol (can be changed depending on your trading strategy)
+# 📈 Market and Symbol Settings
+MARKET_TYPE = "deriv"  # Market type (options: deriv, forex, crypto)
+SYMBOL = "R_75"  # Market symbol (modify as needed)
 
-# Trading settings
-BUY_AMOUNT = 1  # Trade amount (can be adjusted as needed)
+# 💰 Trading Settings
+BUY_AMOUNT = 1  # Amount per trade (adjust as required)
+SELL_AMOUNT = 1  # Amount per sell trade (optional)
+MAX_TRADES_PER_MINUTE = 10  # Maximum trades allowed per minute
 
-# Add any other parameters that you might need in the future
-# For example, max number of trades per minute, risk management settings, etc.
-MAX_TRADES_PER_MINUTE = 10
-STOP_LOSS_PERCENTAGE = 0.05  # Example stop loss percentage
+# 📉 Risk Management Settings
+STOP_LOSS_PERCENTAGE = 0.05  # Stop loss percentage (5%)
+TAKE_PROFIT_PERCENTAGE = 0.10  # Take profit percentage (10%)
+RISK_PER_TRADE = 0.02  # Risk per trade (2% of capital)
 
+# ⏰ Time Settings
+TRADE_TIMEOUT = 60  # Timeout for a trade (in seconds)
+
+# 🛠️ Additional Configurations
+LOGGING_LEVEL = "INFO"  # Log level: DEBUG, INFO, WARNING, ERROR, CRITICAL
