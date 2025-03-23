@@ -19,15 +19,16 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 class DerivExecutor:
     VALID_ASSETS = {"R_75", "R_100", "R_50"}
     DERIV_API_URL = "wss://ws.binaryws.com/websockets/v3?app_id=67310"
+    BALANCE_FILE = "account_balance.json"
 
-    def __init__(self, api_token=API_TOKEN, account_balance=1000):
-        """Initialize WebSocket connection and account balance."""
+    def __init__(self, api_token=API_TOKEN):
+        """Initialize WebSocket connection and load account balance."""
         if not api_token:
             raise ValueError("❌ Missing Deriv API Token. Set it in .env file.")
 
         self.api_token = api_token
         self.ws = None
-        self.account_balance = account_balance  # User-defined account balance
+        self.account_balance = self.load_balance()
 
     def connect(self):
         """Establish WebSocket connection."""
@@ -89,9 +90,13 @@ class DerivExecutor:
             logging.error(f"❌ Request failed: {e}")
 
     def execute_trade(self, trade_type, amount, asset):
-        """Execute a trade and wait for its completion."""
+        """Execute a trade and update account balance."""
         if asset not in self.VALID_ASSETS:
             raise ValueError(f"Invalid asset: {asset}. Allowed: {', '.join(self.VALID_ASSETS)}.")
+
+        if amount > self.account_balance:
+            logging.error("❌ Insufficient balance for trade.")
+            return {"error": "Insufficient balance."}
 
         proposal_data = {
             "proposal": 1,
@@ -145,6 +150,10 @@ class DerivExecutor:
             profit_loss = self.get_trade_result(contract_id)
             result_time = time.strftime("%Y-%m-%d %H:%M:%S")
 
+            # Update account balance
+            self.account_balance += profit_loss
+            self.save_balance()
+
             trade_result_message = (
                 f"💹 Trade Result:\n"
                 f"🕒 Execution: {execution_time}\n"
@@ -153,6 +162,7 @@ class DerivExecutor:
                 f"📈 Signal: {trade_type}\n"
                 f"💰 Amount: ${amount}\n"
                 f"💵 P/L: ${profit_loss:.2f}\n"
+                f"💰 Updated Balance: ${self.account_balance:.2f}\n"
                 f"{'✅ 🟢 PROFIT' if profit_loss > 0 else '✅ 🔴 LOSS'}\n"
                 f"📌 Trade Completed ✅"
             )
@@ -173,17 +183,30 @@ class DerivExecutor:
         """Fetch trade result (profit/loss) using contract ID."""
         try:
             time.sleep(60)  # Simulate waiting for trade completion
-            return round(random.uniform(-1000, 1000), 2)  # Simulated P/L for testing
+            return round(random.uniform(-500, 500), 2)  # Simulated P/L for testing
 
         except Exception as e:
             logging.error(f"❌ Error fetching trade result: {e}")
             return 0
 
+    def load_balance(self):
+        """Load balance from file."""
+        if os.path.exists(self.BALANCE_FILE):
+            with open(self.BALANCE_FILE, "r") as file:
+                data = json.load(file)
+                return data.get("balance", 1000)  # Default balance: $1000
+        return 1000
+
+    def save_balance(self):
+        """Save balance to file."""
+        with open(self.BALANCE_FILE, "w") as file:
+            json.dump({"balance": self.account_balance}, file)
+
 if __name__ == "__main__":
-    executor = DerivExecutor(account_balance=1000)
+    executor = DerivExecutor()
 
     for i in range(5):  # Execute 5 trades
         trade_type = random.choice(["BUY", "SELL"])
         logging.info(f"🚀 Executing trade {i + 1}/5 as {trade_type}...")
-        executor.execute_trade(trade_type, 1000, "R_75")
+        executor.execute_trade(trade_type, 100, "R_75")  # $100 per trade
         time.sleep(5)  # Avoid API rate limits
